@@ -1,0 +1,24 @@
+test_name: Get some fake data from the JSON placeholder API
+
+marks:
+  - parametrize:
+      key: [var]
+      vals:
+        - ["{var1}"]
+        - ["{var2}"]
+          #ids:
+          #  - v1
+          #  - v2
+
+stages:
+  - name: Make sure we have the right ID
+    request:
+      url: "https://jsonplaceholder.typicode.com/posts/{var}"
+      method: GET
+    response:
+      status_code: 200
+      json:
+        id: 1
+        userId: 2
+        title: "sunt aut facere repellat provident occaecati excepturi optio reprehenderit"
+        body: "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
