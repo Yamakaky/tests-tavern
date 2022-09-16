@@ -1,20 +1,20 @@
-2022-09-16T17:00:35.769Z	info	service/telemetry.go:102	Setting up own telemetry...
-2022-09-16T17:00:35.769Z	info	service/telemetry.go:137	Serving Prometheus metrics	{"address": ":8888", "level": "basic"}
-2022-09-16T17:00:35.769Z	info	components/components.go:30	In development component. May change in the future.	{"kind": "exporter", "data_type": "traces", "name": "logging", "stability": "in development"}
-2022-09-16T17:00:35.770Z	info	extensions/extensions.go:42	Starting extensions...
-2022-09-16T17:00:35.770Z	info	pipelines/pipelines.go:74	Starting exporters...
-2022-09-16T17:00:35.770Z	info	pipelines/pipelines.go:78	Exporter is starting...	{"kind": "exporter", "data_type": "traces", "name": "logging"}
-2022-09-16T17:00:35.770Z	info	pipelines/pipelines.go:82	Exporter started.	{"kind": "exporter", "data_type": "traces", "name": "logging"}
-2022-09-16T17:00:35.770Z	info	pipelines/pipelines.go:86	Starting processors...
-2022-09-16T17:00:35.770Z	info	pipelines/pipelines.go:98	Starting receivers...
-2022-09-16T17:00:35.770Z	info	pipelines/pipelines.go:102	Receiver is starting...	{"kind": "receiver", "name": "otlp", "pipeline": "traces"}
-2022-09-16T17:00:35.770Z	info	otlpreceiver/otlp.go:70	Starting GRPC server on endpoint 0.0.0.0:4317	{"kind": "receiver", "name": "otlp", "pipeline": "traces"}
-2022-09-16T17:00:35.770Z	info	otlpreceiver/otlp.go:88	Starting HTTP server on endpoint 0.0.0.0:4318	{"kind": "receiver", "name": "otlp", "pipeline": "traces"}
-2022-09-16T17:00:35.770Z	info	pipelines/pipelines.go:106	Receiver started.	{"kind": "receiver", "name": "otlp", "pipeline": "traces"}
-2022-09-16T17:00:35.770Z	info	service/collector.go:215	Starting otelcol...	{"Version": "0.56.0", "NumCPU": 24}
-2022-09-16T17:00:35.770Z	info	service/collector.go:128	Everything is ready. Begin running and processing data.
-2022-09-16T17:00:37.848Z	info	TracesExporter	{"kind": "exporter", "data_type": "traces", "name": "logging", "#spans": 5}
-2022-09-16T17:00:37.848Z	info	ResourceSpans #0
+2022-09-16T17:14:21.473Z	info	service/telemetry.go:102	Setting up own telemetry...
+2022-09-16T17:14:21.473Z	info	service/telemetry.go:137	Serving Prometheus metrics	{"address": ":8888", "level": "basic"}
+2022-09-16T17:14:21.473Z	info	components/components.go:30	In development component. May change in the future.	{"kind": "exporter", "data_type": "traces", "name": "logging", "stability": "in development"}
+2022-09-16T17:14:21.474Z	info	extensions/extensions.go:42	Starting extensions...
+2022-09-16T17:14:21.474Z	info	pipelines/pipelines.go:74	Starting exporters...
+2022-09-16T17:14:21.474Z	info	pipelines/pipelines.go:78	Exporter is starting...	{"kind": "exporter", "data_type": "traces", "name": "logging"}
+2022-09-16T17:14:21.474Z	info	pipelines/pipelines.go:82	Exporter started.	{"kind": "exporter", "data_type": "traces", "name": "logging"}
+2022-09-16T17:14:21.474Z	info	pipelines/pipelines.go:86	Starting processors...
+2022-09-16T17:14:21.474Z	info	pipelines/pipelines.go:98	Starting receivers...
+2022-09-16T17:14:21.474Z	info	pipelines/pipelines.go:102	Receiver is starting...	{"kind": "receiver", "name": "otlp", "pipeline": "traces"}
+2022-09-16T17:14:21.474Z	info	otlpreceiver/otlp.go:70	Starting GRPC server on endpoint 0.0.0.0:4317	{"kind": "receiver", "name": "otlp", "pipeline": "traces"}
+2022-09-16T17:14:21.474Z	info	otlpreceiver/otlp.go:88	Starting HTTP server on endpoint 0.0.0.0:4318	{"kind": "receiver", "name": "otlp", "pipeline": "traces"}
+2022-09-16T17:14:21.474Z	info	pipelines/pipelines.go:106	Receiver started.	{"kind": "receiver", "name": "otlp", "pipeline": "traces"}
+2022-09-16T17:14:21.474Z	info	service/collector.go:215	Starting otelcol...	{"Version": "0.56.0", "NumCPU": 24}
+2022-09-16T17:14:21.474Z	info	service/collector.go:128	Everything is ready. Begin running and processing data.
+2022-09-16T17:14:23.503Z	info	TracesExporter	{"kind": "exporter", "data_type": "traces", "name": "logging", "#spans": 5}
+2022-09-16T17:14:23.503Z	info	ResourceSpans #0
 Resource SchemaURL: 
 Resource labels:
      -> telemetry.sdk.language: STRING(python)
@@ -24,37 +24,38 @@ Resource labels:
      -> process.runtime.name: STRING(cpython)
      -> process.runtime.version: STRING(3.10.7)
      -> process.runtime.description: STRING(3.10.7 (main, Sep  6 2022, 21:22:27) [GCC 12.2.0])
-     -> process.pid: INT(15151)
+     -> process.pid: INT(17796)
      -> process.executable.name: STRING(pytest)
      -> process.executable.path: STRING(/usr/bin/python3.10)
      -> process.command_line: STRING(/home/mikael/dev/python/tests-tavern/.venv/bin/python /home/mikael/dev/python/tests-tavern/.venv/bin/pytest --export-traces --tavern-global-cfg cfg.yaml)
      -> process.command: STRING(/home/mikael/dev/python/tests-tavern/.venv/bin/python)
      -> process.command_args: STRING(/home/mikael/dev/python/tests-tavern/.venv/bin/pytest --export-traces --tavern-global-cfg cfg.yaml)
      -> process.owner: STRING(mikael)
-     -> service.version: STRING(a07c84feaa8a18e353ccb27132a793104702ad9f)
+     -> service.version: STRING(45b93a418fd24f41dec706d2a7ba684ad2206cd1)
 ScopeSpans #0
 ScopeSpans SchemaURL: 
 InstrumentationScope pytest-opentelemetry 
 Span #0
-    Trace ID       : 0326d26990b5843932da6673d207c4c8
-    Parent ID      : 896d3aa3d83415df
-    ID             : 7c09e97e9f3bf9d1
+    Trace ID       : 52dfe95593ae346065118ef2a30b3edc
+    Parent ID      : 7fed9785316051ef
+    ID             : e80a0358d403f944
     Name           : Get some fake data from the JSON placeholder API[1]
     Kind           : SPAN_KIND_INTERNAL
-    Start time     : 2022-09-16 17:00:37.403281109 +0000 UTC
-    End time       : 2022-09-16 17:00:37.565814693 +0000 UTC
+    Start time     : 2022-09-16 17:14:23.250836733 +0000 UTC
+    End time       : 2022-09-16 17:14:23.406665411 +0000 UTC
     Status code    : STATUS_CODE_ERROR
     Status message : <class 'tavern.util.exceptions.TestFailError'>: Test 'Make sure we have the right ID' failed:
 - Key mismatch: (expected["userId"] = '2' (type = <class 'int'>), actual["userId"] = '1' (type = <class 'int'>))
 Attributes:
      -> code.filepath: STRING(tests/test_otel.tavern.yaml)
      -> code.function: STRING(Get some fake data from the JSON placeholder API[1])
-     -> test.id: STRING(tests/test_otel.tavern.yaml::Get some fake data from the JSON placeholder API[1])
-     -> test.keywords: STRING(<NodeKeywords for node <YamlItem Get some fake data from the JSON placeholder API[1]>>)
+     -> pytest.nodeid: STRING(tests/test_otel.tavern.yaml::Get some fake data from the JSON placeholder API[1])
+     -> pytest.keywords: STRING(<NodeKeywords for node <YamlItem Get some fake data from the JSON placeholder API[1]>>)
+     -> pytest.span_type: STRING(test)
 Events:
 SpanEvent #0
      -> Name: exception
-     -> Timestamp: 2022-09-16 17:00:37.565589443 +0000 UTC
+     -> Timestamp: 2022-09-16 17:14:23.40646484 +0000 UTC
      -> DroppedAttributesCount: 0
      -> Attributes:
          -> exception.type: STRING(TestFailError)
@@ -97,25 +98,26 @@ E   tavern.util.exceptions.TestFailError: Test 'Make sure we have the right ID' 
     - Key mismatch: (expected["userId"] = '2' (type = <class 'int'>), actual["userId"] = '1' (type = <class 'int'>)))
          -> exception.escaped: STRING(False)
 Span #1
-    Trace ID       : 0326d26990b5843932da6673d207c4c8
-    Parent ID      : 896d3aa3d83415df
-    ID             : 4c17612a56d03ddc
+    Trace ID       : 52dfe95593ae346065118ef2a30b3edc
+    Parent ID      : 7fed9785316051ef
+    ID             : 562b786f23f4a656
     Name           : Get some fake data from the JSON placeholder API[2]
     Kind           : SPAN_KIND_INTERNAL
-    Start time     : 2022-09-16 17:00:37.565978833 +0000 UTC
-    End time       : 2022-09-16 17:00:37.830316991 +0000 UTC
+    Start time     : 2022-09-16 17:14:23.406796081 +0000 UTC
+    End time       : 2022-09-16 17:14:23.485239241 +0000 UTC
     Status code    : STATUS_CODE_ERROR
     Status message : <class 'tavern.util.exceptions.TestFailError'>: Test 'Make sure we have the right ID' failed:
 - Key mismatch: (expected["title"] = 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit' (type = <class 'tavern.util.formatted_str.FormattedString'>), actual["title"] = 'qui est esse' (type = <class 'str'>))
 Attributes:
      -> code.filepath: STRING(tests/test_otel.tavern.yaml)
      -> code.function: STRING(Get some fake data from the JSON placeholder API[2])
-     -> test.id: STRING(tests/test_otel.tavern.yaml::Get some fake data from the JSON placeholder API[2])
-     -> test.keywords: STRING(<NodeKeywords for node <YamlItem Get some fake data from the JSON placeholder API[2]>>)
+     -> pytest.nodeid: STRING(tests/test_otel.tavern.yaml::Get some fake data from the JSON placeholder API[2])
+     -> pytest.keywords: STRING(<NodeKeywords for node <YamlItem Get some fake data from the JSON placeholder API[2]>>)
+     -> pytest.span_type: STRING(test)
 Events:
 SpanEvent #0
      -> Name: exception
-     -> Timestamp: 2022-09-16 17:00:37.83013871 +0000 UTC
+     -> Timestamp: 2022-09-16 17:14:23.485073541 +0000 UTC
      -> DroppedAttributesCount: 0
      -> Attributes:
          -> exception.type: STRING(TestFailError)
@@ -158,50 +160,54 @@ E   tavern.util.exceptions.TestFailError: Test 'Make sure we have the right ID' 
     - Key mismatch: (expected["title"] = 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit' (type = <class 'tavern.util.formatted_str.FormattedString'>), actual["title"] = 'qui est esse' (type = <class 'str'>)))
          -> exception.escaped: STRING(False)
 Span #2
-    Trace ID       : 0326d26990b5843932da6673d207c4c8
-    Parent ID      : 896d3aa3d83415df
-    ID             : 9d82ee306b698aca
+    Trace ID       : 52dfe95593ae346065118ef2a30b3edc
+    Parent ID      : 7fed9785316051ef
+    ID             : 9bf810a14fd7b8de
     Name           : test_fn
     Kind           : SPAN_KIND_INTERNAL
-    Start time     : 2022-09-16 17:00:37.830430291 +0000 UTC
-    End time       : 2022-09-16 17:00:37.830985492 +0000 UTC
+    Start time     : 2022-09-16 17:14:23.485341811 +0000 UTC
+    End time       : 2022-09-16 17:14:23.485874412 +0000 UTC
     Status code    : STATUS_CODE_OK
     Status message : 
 Attributes:
      -> code.filepath: STRING(tests/test_pytest.py)
      -> code.function: STRING(test_fn)
-     -> test.id: STRING(tests/test_pytest.py::test_fn)
-     -> test.keywords: STRING(<NodeKeywords for node <Function test_fn>>)
+     -> pytest.nodeid: STRING(tests/test_pytest.py::test_fn)
+     -> pytest.keywords: STRING(<NodeKeywords for node <Function test_fn>>)
+     -> pytest.span_type: STRING(test)
 Span #3
-    Trace ID       : 0326d26990b5843932da6673d207c4c8
-    Parent ID      : 896d3aa3d83415df
-    ID             : b49cac6e0ad461cb
+    Trace ID       : 52dfe95593ae346065118ef2a30b3edc
+    Parent ID      : 7fed9785316051ef
+    ID             : 99b72ea2adffa714
     Name           : test_class
     Kind           : SPAN_KIND_INTERNAL
-    Start time     : 2022-09-16 17:00:37.831051082 +0000 UTC
-    End time       : 2022-09-16 17:00:37.831490313 +0000 UTC
+    Start time     : 2022-09-16 17:14:23.485941252 +0000 UTC
+    End time       : 2022-09-16 17:14:23.486352052 +0000 UTC
     Status code    : STATUS_CODE_OK
     Status message : 
 Attributes:
      -> code.filepath: STRING(tests/test_pytest.py)
      -> code.function: STRING(test_class)
-     -> test.id: STRING(tests/test_pytest.py::TestClass::test_class)
-     -> test.keywords: STRING(<NodeKeywords for node <Function test_class>>)
+     -> pytest.nodeid: STRING(tests/test_pytest.py::TestClass::test_class)
+     -> pytest.keywords: STRING(<NodeKeywords for node <Function test_class>>)
+     -> pytest.span_type: STRING(test)
      -> code.lineno: INT(4)
 Span #4
-    Trace ID       : 0326d26990b5843932da6673d207c4c8
+    Trace ID       : 52dfe95593ae346065118ef2a30b3edc
     Parent ID      : 
-    ID             : 896d3aa3d83415df
+    ID             : 7fed9785316051ef
     Name           : test run
     Kind           : SPAN_KIND_INTERNAL
-    Start time     : 2022-09-16 17:00:37.383363088 +0000 UTC
-    End time       : 2022-09-16 17:00:37.831540753 +0000 UTC
+    Start time     : 2022-09-16 17:14:23.230511009 +0000 UTC
+    End time       : 2022-09-16 17:14:23.486398302 +0000 UTC
     Status code    : STATUS_CODE_UNSET
     Status message : 
+Attributes:
+     -> pytest.span_type: STRING(run)
 	{"kind": "exporter", "data_type": "traces", "name": "logging"}
-2022-09-16T17:00:47.432Z	info	service/collector.go:159	Received signal from OS	{"signal": "interrupt"}
-2022-09-16T17:00:47.432Z	info	service/collector.go:231	Starting shutdown...
-2022-09-16T17:00:47.432Z	info	pipelines/pipelines.go:118	Stopping receivers...
-2022-09-16T17:00:47.434Z	info	pipelines/pipelines.go:125	Stopping processors...
-2022-09-16T17:00:47.434Z	info	pipelines/pipelines.go:132	Stopping exporters...
-2022-09-16T17:00:47.434Z	info	extensions/extensions.go:56	Stopping extensions...
+2022-09-16T17:14:25.754Z	info	service/collector.go:159	Received signal from OS	{"signal": "interrupt"}
+2022-09-16T17:14:25.754Z	info	service/collector.go:231	Starting shutdown...
+2022-09-16T17:14:25.754Z	info	pipelines/pipelines.go:118	Stopping receivers...
+2022-09-16T17:14:25.756Z	info	pipelines/pipelines.go:125	Stopping processors...
+2022-09-16T17:14:25.756Z	info	pipelines/pipelines.go:132	Stopping exporters...
+2022-09-16T17:14:25.756Z	info	extensions/extensions.go:56	Stopping extensions...
