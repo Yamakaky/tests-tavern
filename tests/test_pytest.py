@@ -1,5 +1,5 @@
 def test_fn():
-    assert 1 == 1
+    assert 1 == 2
 
 class TestClass:
     def test_class(self):
